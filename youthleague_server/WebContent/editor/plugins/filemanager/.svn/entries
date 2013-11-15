@@ -1,0 +1,43 @@
+8
+
+dir
+24
+http://www.svnchina.com/svn/hongri/hongri/WebRoot/editor/plugins/filemanager
+http://www.svnchina.com/svn/hongri
+
+
+
+2012-04-11T05:57:47.710656Z
+2
+luobowen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2332f8f0-b2b3-44a9-b4f3-8d5a7e63da75
+
+images
+dir
+
+filemanager.js
+file
+
+
+
+
+2012-04-28T16:42:10.332548Z
+31eb07784f8c89e908f921dcf99949de
+2012-04-11T05:57:47.710656Z
+2
+luobowen
+

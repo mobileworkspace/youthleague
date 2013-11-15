@@ -1,0 +1,29 @@
+#container {
+	background: #fff;
+	padding-bottom: 50px;
+	font: 150% Arial, Helvetica, sans-serif;
+}
+
+#container table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0;
+}
+
+#container th,#container td {
+	padding: .5em;
+	border: 1px solid #fff;
+}
+
+#container th {
+	background: #7D2C19; repeat-x;
+	color: #fff;
+}
+
+#container td {
+	background: #FFF;
+}
+
+#container  tbody tr.even  td {
+	background: #F0F0F0;
+}

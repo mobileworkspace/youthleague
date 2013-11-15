@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>DepartmentServlet</servlet-name>
+    <servlet-class>com.servlet.DepartmentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrganizationServlet</servlet-name>
+    <servlet-class>com.servlet.OrganizationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PositionServlet</servlet-name>
+    <servlet-class>com.servlet.PositionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StaffServlet</servlet-name>
+    <servlet-class>com.servlet.StaffServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetDatabaseVersionServlet</servlet-name>
+    <servlet-class>com.servlet.GetDatabaseVersionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadDatebaseFileServlet</servlet-name>
+    <servlet-class>com.servlet.UploadDatebaseFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepartmentServlet</servlet-name>
+    <url-pattern>/DepartmentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrganizationServlet</servlet-name>
+    <url-pattern>/OrganizationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PositionServlet</servlet-name>
+    <url-pattern>/PositionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StaffServlet</servlet-name>
+    <url-pattern>/StaffServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetDatabaseVersionServlet</servlet-name>
+    <url-pattern>/GetDatabaseVersionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadDatebaseFileServlet</servlet-name>
+    <url-pattern>/UploadDatebaseFileServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

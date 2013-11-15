@@ -1,0 +1,32 @@
+#container {
+	padding-bottom: 50px;
+	font: 73% Arial, Helvetica, sans-serif;
+}
+
+#container table,td {
+	font: 100% Arial, Helvetica, sans-serif;
+}
+
+#container table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1em 0;
+}
+
+#container th,#container td {
+	padding: .5em;
+	border: 1px solid #fff;
+}
+
+#container th {
+	background: #328aa4 url(tr_back.gif) repeat-x;
+	color: #fff;
+}
+
+#container td {
+	background: #e5f1f4;
+}
+
+#container  tbody tr.even  td {
+	background: #f8fbfc;
+}
