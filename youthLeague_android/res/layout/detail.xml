@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" 
+    android:focusable="false" >
+
+    <!-- title -->
+    <LinearLayout
+        android:id="@+id/index_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/headtitlebk"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/back" />
+	                
+        <TextView
+            android:id="@+id/imgmyindex_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 用户信息 -->
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="18dp"
+        android:shrinkColumns="1"
+        android:focusable="false">
+
+        <TableRow
+		    android:layout_marginTop="20dp">
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:text="@string/name_title"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp" >
+		    </TextView>
+		
+		    <TextView
+		        android:id="@+id/name_textview"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp" />        
+            
+        </TableRow>
+        
+        <TableRow
+		    android:layout_marginTop="20dp">
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:text="@string/position_title"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp" >
+		    </TextView>
+		
+		    <TextView
+		        android:id="@+id/position_textview"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp" />        
+            
+        </TableRow>
+                
+        <TableRow 
+		    android:layout_marginTop="20dp">
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/mobile_title"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp" >
+		    </TextView>
+		
+		    <TextView
+		        android:id="@+id/mobile_textview"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp"  />
+		
+        </TableRow>
+           
+        <TableRow 
+		    android:layout_marginTop="20dp">
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/phone_title"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp" >
+		    </TextView>
+		
+		    <TextView
+		        android:id="@+id/phone_textview"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/color_content_black"
+		        android:textSize="16sp"  />
+		
+        </TableRow>
+                
+
+                
+    </TableLayout>
+    
+    <!-- 打电话 和 发短信  按钮 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sms_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_regist"
+            android:gravity="center"
+            android:text="@string/sms_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/call_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:text="@string/call_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>

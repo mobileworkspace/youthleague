@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+    
+	<!-- title -->
+	<LinearLayout
+	    android:id="@+id/index_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="@drawable/headtitlebk"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+	        android:id="@+id/imgmyindex_head"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="5dp"
+	        android:gravity="center"
+	        android:text="@string/app_name"
+	        android:textColor="@color/white"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+	</LinearLayout>
+	    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginBottom="20dp" >
+	    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		
+		    <TableLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:shrinkColumns="*">
+		        
+		        <!-- phone -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="15dp">
+		            
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/mobileLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <EditText
+				        android:id="@+id/phone_edittext"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical"
+				        android:hint="@string/hint_phone"
+				        android:inputType="phone"
+				        android:singleLine="true" />
+		                
+		        </TableRow>
+		        
+		        <!-- user name -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="6dp">
+				    
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/nameLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <EditText
+				        android:id="@+id/name_edittext"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical"
+				        android:hint="@string/hint_name"
+				        android:inputType="textPassword"
+				        android:singleLine="true" />
+		                
+		        </TableRow>
+		                
+		        <!-- email -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="6dp">
+				    
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/phonelLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <EditText
+				        android:id="@+id/email_edittext"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical"
+				        android:hint="@string/hint_email"
+				        android:inputType="textEmailAddress"
+				        android:singleLine="true" />
+		                
+		        </TableRow>
+		                
+		        <!-- password -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="6dp">
+				    
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/passwordLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <EditText
+				        android:id="@+id/pwd_edittext"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical"
+				        android:hint="@string/hint_password"
+				        android:singleLine="true" />
+		                
+		        </TableRow>
+		        
+		        <!-- department -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="6dp">
+				    
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/departmentLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <Spinner
+				        android:id="@+id/department"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical"  />
+		                
+		        </TableRow>
+		        
+		        <!-- position -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="6dp">
+				    
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/positionLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <Spinner
+				        android:id="@+id/position"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical" />
+		                
+		        </TableRow>   
+		           
+		        <!-- organization -->
+		        <TableRow 
+		            android:layout_marginLeft="8dp"
+		            android:layout_marginRight="8dp"
+				    android:layout_marginTop="6dp">
+				    
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:layout_gravity="right|center_vertical"
+				        android:text="@string/organizationLabel"
+				        android:textColor="@color/color_content_black"
+				        android:textSize="16sp" />
+				
+				    <Spinner
+				        android:id="@+id/organization"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="15dp"
+				        android:layout_marginRight="15dp"
+				        android:layout_gravity="center_vertical"  />
+		                
+		        </TableRow>
+		                
+		    </TableLayout>
+		
+		    <!-- 两个checkbox -->
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="8dp"
+		        android:gravity="center"
+		        android:orientation="horizontal" >
+		        		    
+		        <CheckBox
+		            android:id="@+id/forgetCheckBox"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="left"
+		            android:layout_marginLeft="50dp"
+		            android:background="@drawable/checkbox_background"
+		            android:button="@drawable/checkbox"
+		            android:gravity="center_vertical|start|left"
+		            android:text="@string/forgetMe"
+		            android:textColor="@color/dimgrey"
+		            android:textSize="13sp" >
+		        </CheckBox>
+		
+		        <CheckBox
+		            android:id="@+id/cancelAutoLoginCheckBox"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="40dp"
+		            android:background="@drawable/checkbox_background"
+		            android:button="@drawable/checkbox"
+		            android:text="@string/cancel_autoLogin"
+		            android:textColor="@color/dimgrey"
+		            android:textSize="13sp" />
+		
+		    </LinearLayout>
+		    
+		    <!-- 取消 和 注册 按钮 -->
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="60dp"
+		        android:layout_marginRight="40dp"
+		        android:layout_marginTop="20dp"
+		        android:orientation="horizontal" >
+		
+		        <Button
+		            android:id="@+id/cancel_btn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="15dp"
+		            android:layout_weight="1"
+		            android:background="@drawable/btn_regist"
+		            android:gravity="center"
+		            android:text="@string/cancelLabel"
+		            android:textColor="@color/white"
+		            android:textSize="18sp" >
+		        </Button>
+		
+		        <Button
+		            android:id="@+id/confirm_btn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="15dp"
+		            android:layout_weight="1"
+		            android:background="@drawable/btn_login"
+		            android:gravity="center"
+		            android:text="@string/ok_btn"
+		            android:textColor="@color/white"
+		            android:textSize="18sp" >
+		        </Button>
+		        
+		    </LinearLayout>
+		
+		
+		</LinearLayout>    
+    
+	</ScrollView>
+	
+</LinearLayout>
